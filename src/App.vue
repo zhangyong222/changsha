@@ -17,7 +17,8 @@ import Counter from './components/counter.vue'
 </script>
 <style scoped>
 .logo {
-  height: 6em;
+  height: 7em;
+  
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
