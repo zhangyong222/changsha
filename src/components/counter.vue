@@ -2,6 +2,7 @@
     <div >883338</div>
     <!-- <div>{{ famsg }}</div> -->
     <div >883338</div>
+    <div >883338</div>
 
 </template>
 <script setup lang="ts">
