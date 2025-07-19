@@ -1,4 +1,5 @@
 <template>
+  <DateTime/>
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -9,11 +10,23 @@
   </div>
   <HelloWorld msg="Vite + Vue" />
   <Counter/>
+  <div>22222</div>
+  {{ msg }}
+  <div>11111</div>
+
 </template>
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import Counter from './components/counter.vue'
+/**provide,inject方法只能由父级组件向下传递数据给后代组件，不能由后代组件向上传递数据 
+ * 
+ */
+import {ref,inject,provide} from "vue";
+import HelloWorld from './components/HelloWorld.vue';
+import Counter from './components/counter.vue';
+import DateTime from './components/dateTime.vue';
 
+const msg = inject("sonmsg")
+// const famsg = ref("父组件数据");
+// provide("famsg",famsg.value)
 </script>
 <style scoped>
 .logo {
